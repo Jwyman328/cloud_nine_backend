@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import NewsItem
 from .serializers import LastestNewsItemsSerializer
 from rest_framework import views
+from rest_framework import status
 
 # Create your views here.
 class LatestNewsItems(views.APIView):
