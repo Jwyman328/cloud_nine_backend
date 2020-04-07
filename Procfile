@@ -1,1 +1,1 @@
-web: gunicorn cloud_nine_backend/cloud_nine_backend.wsgi --log-file -  
+web: gunicorn cloud_nine_backend.wsgi --log-file -  
