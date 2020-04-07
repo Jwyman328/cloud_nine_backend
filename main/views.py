@@ -3,6 +3,8 @@ from .models import NewsItem
 from .serializers import LastestNewsItemsSerializer
 from rest_framework import views
 from rest_framework import status
+from rest_framework.response import Response
+
 
 # Create your views here.
 class LatestNewsItems(views.APIView):
