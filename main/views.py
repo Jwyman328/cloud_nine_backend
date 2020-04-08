@@ -19,6 +19,6 @@ class TourItems(views.APIView):
 
     def get(self, request):
         today = datetime.datetime.now()
-        AllCurrentAndFutureTourItems = TourItem.objects.filter(date__gte = date )
+        AllCurrentAndFutureTourItems = TourItem.objects.filter(date__gte = today )
         serialized_data = TourItemSerializer(AllCurrentAndFutureTourItems,  many=True).data
         return Response(serialized_data, status.HTTP_200_OK)
