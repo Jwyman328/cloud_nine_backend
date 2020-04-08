@@ -91,17 +91,17 @@ WSGI_APPLICATION = 'cloud_nine_backend.wsgi.application'
 
 DATABASES = {
 
-    "default": {
-        "ENGINE": "django.db.backends.postgresql_psycopg2",
-         'NAME': 'test',                      # Or path to database file if using sqlite3.
+    #"default": {
+       # "ENGINE": "django.db.backends.postgresql_psycopg2",
+         #'NAME': 'test',                      # Or path to database file if using sqlite3.
                   # Set to empty string for default. Not used with sqlite3.
      
-    }}
+   # }}
 
-    #'default': {
-              # 'ENGINE': 'django.db.backends.sqlite3',
-               # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    #}}
+    'default': {
+               'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }}
 
 
 # Password validation
@@ -126,6 +126,7 @@ CORS_ORIGIN_WHITELIST = [
     "http://localhost:8080",
     "http://127.0.0.1:9000",
     "http://localhost:3003",
+    "https://gallant-agnesi-83dd2d.netlify.com",
 ]
 
 
