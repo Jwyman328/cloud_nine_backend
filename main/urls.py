@@ -20,6 +20,8 @@ from . import views
 
 urlpatterns = [
     path('latest_news_items/', views.LatestNewsItems.as_view(), name='latest_news_items'),
+    path('current_tour_shows/', views.TourItems.as_view(), name='current_tour_shows'),
+
 
 
 ]
