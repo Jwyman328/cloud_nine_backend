@@ -127,6 +127,7 @@ CORS_ORIGIN_WHITELIST = [
     "http://127.0.0.1:9000",
     "http://localhost:3003",
     "https://gallant-agnesi-83dd2d.netlify.com",
+    "https://gallant-agnesi-83dd2d.netlify.app",
 ]
 
 
