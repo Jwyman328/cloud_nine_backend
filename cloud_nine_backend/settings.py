@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '5e$$h%zbd2z7*+%-ac+9pnvmm=a2vo63t3q%q$k5w43foo7(q0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -128,6 +128,7 @@ CORS_ORIGIN_WHITELIST = [
     "http://localhost:3003",
     "https://gallant-agnesi-83dd2d.netlify.com",
     "https://gallant-agnesi-83dd2d.netlify.app",
+    "https://cloudnineband.netlify.app/News",
 ]
 
 
