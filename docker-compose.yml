@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: cloud_back
+    image: cloud_back_image
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./main:/app/main
+    ports:
+      - 8000:8000
+    stdin_open: true
